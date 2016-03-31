@@ -1,0 +1,110 @@
+{%load staticfiles%}
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <title>D.I.A.G-Coming Soon Page</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <!-- Favicon -->
+        <link href="{%static 'home/img/favicon.ico'%}" rel="shortcut icon">
+
+        <!-- Custom fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Roboto:300,100" rel="stylesheet">
+        <link href="{% static 'home/css/social-font.css' %}" rel="stylesheet">
+
+        <!-- Bootstrap stylesheets -->
+        <link href="{% static 'home/css/bootstrap.min.css'%}" rel="stylesheet" type = "text/css" >
+
+        <!-- Template stylesheets -->
+        <link href="{% static 'home/css/shader.css'%}" rel="stylesheet">
+    </head>
+
+    <body class="theme-fire">
+        <!-- Background container -->
+        <div id="background-container" class="background-container">
+            <div id="background-output" class="background-output"></div>
+            <div id="vignette" class="background-vignette"></div>
+            <div id="noise" class="background-noise"></div>
+        </div>
+        <!-- /Background container -->
+
+        <!-- Main content -->
+        <div class="content">
+            <div class="container">
+                <!-- Header -->
+                
+                    <h1 class="header col-sm-8 col-sm-offset-2">D.I.A.G</h1>   
+                
+                <!-- /Header -->
+
+                <!-- Description -->
+                <div class="row">
+                    <p class="description col-sm-8 col-sm-offset-2">D.I.A.G is short for Driving Information Assistant Gadget. It will help you link your car to the rest of your digital life.</p>   
+             </div>
+                <!-- /Description -->
+            </div>
+
+            <!-- Countdown -->
+            <div class="countdown" id="countdown">
+                <div class="container">
+                    <div class="row">
+                        <div class="countdown-item col-sm-3 col-xs-6">
+                            <div class="countdown-number" id="countdown-days"></div>
+                            <div class="countdown-label">days</div>
+                        </div>
+
+                        <div class="countdown-item col-sm-3 col-xs-6">
+                            <div class="countdown-number" id="countdown-hours"></div>
+                            <div class="countdown-label">hours</div>
+                        </div>
+
+                        <div class="countdown-item col-sm-3 col-xs-6">
+                            <div class="countdown-number" id="countdown-minutes"></div>
+                            <div class="countdown-label">minutes</div>
+                        </div>
+
+                        <div class="countdown-item col-sm-3 col-xs-6">
+                            <div class="countdown-number" id="countdown-seconds"></div>
+                            <div class="countdown-label">seconds</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Countdown -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="form-and-links-container col-sm-8 col-sm-offset-2">
+                        <!-- Subscription form -->
+                   
+                         <div class="row">
+                            <form class="subscription-form" id="subscription-form" novalidate>
+                                <div class="input-group col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0">
+                                    <input type="email" class="subscription-form-email form-control" id="subscription-form-email" name="email" placeholder="Enter email to sign up for news and update">  
+                                   <span class="input-group-btn">
+                                        <button class="subscription-form-submit btn" id="subscription-form-submit">Subscribe</button>
+                                    </span>
+                                </div>
+                            </form>
+                          </div>
+                      
+              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Main content -->
+
+        <!-- Scripts -->
+        <script src="{% static 'home/js/jquery-1.11.1.min.js' %}"></script>
+        <script src="{% static 'home/js/jquery.countdown.js' %}"></script>
+        <script src="{% static 'home/js/placeholders.min.js'%}"></script>
+        <script src="{% static 'home/js/flat-surface-shader.js'%}"></script>
+        <script src="{% static 'home/js/main.config.js'%}"></script>
+        <script src="{% static 'home/js/shader.js'%}"></script>
+    </body>
+</html>
